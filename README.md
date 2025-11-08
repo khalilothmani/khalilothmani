@@ -1,5 +1,5 @@
 # 💫 About Me:
-Passionate about robotics, microcontrollers, and AI, I work on projects with Arduino, STM32, ESPs, and Raspberry Pi. I focus on sensors, computer vision, and machine learning, and I also build hardware tools for testing and exploration. This GitHub showcases some of my creations and experiments.
+Hi i am Med Khalil Othmani and i am passionate about robotics, microcontrollers, and AI, I work on projects with Arduino, STM32, ESPs, and Raspberry Pi. I focus on sensors, computer vision, and machine learning, and I also build hardware tools for testing and exploration. This GitHub showcases some of my creations and experiments.
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/khalil-othmani-379155316) 
