@@ -1,16 +1,25 @@
-## Hi there 👋
+# Hi, I’m Med Khalil Othmani 👋
 
-<!--
-**khalilothmani/khalilothmani** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About Me
+I’m a **roboticist and embedded systems enthusiast**. I work on projects involving **Arduino, ROS, AI, and computer vision**.  
+I love building **robots, prosthetics, and intelligent systems** that merge human-machine interaction.
 
-Here are some ideas to get you started:
+## Skills
+- Programming: C++, Python, ROS, OpenCV
+- Hardware: Arduino, ESP32, sensors, actuators
+- AI & ML: Computer vision, AI-assisted robotics
+- Tools: Git, GitHub, Linux, VS Code
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Projects
+- **Oliver** – robotic hand that mirrors human hand movement ([project link])
+- **NeuralSync** – AI-assisted prosthetic hand ([project link])
+- Various robotics projects on my [GitHub](https://github.com/medkhalilothmani)
+
+## Contact
+- Email: `your-email@example.com`
+- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
+- Instagram/Twitter: `@yourhandle`
+
+---
+
+✨ Fun fact: I love solving CTF challenges and learning new tech daily.
