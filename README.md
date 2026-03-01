@@ -40,10 +40,7 @@ struct Builder {
 
 ## 🦾 `// BUILDING_IN_THE_LAB`
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=khalilothmani&theme=tokyonight&show_icons=true&hide_border=true&count_private=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khalilothmani&theme=tokyonight&show_icons=true&hide_border=true&layout=compact" width="48%" />
-</div>
+
 
 <br/>
 
@@ -84,7 +81,7 @@ struct Builder {
 
 ```text
 >> ANALYZING RECENT COMMITS...
->> DETECTING HARDWARE INTEGRATIONS...
+  >> DETECTING HARDWARE INTEGRATIONS...
 >> SIGNAL STRENGTH: [ OPTIMAL ]
 ```
 
