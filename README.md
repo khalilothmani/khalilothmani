@@ -38,11 +38,6 @@ struct Builder {
 
 ## 🦾 `// BUILDING_IN_THE_LAB`
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=khalilothmani&theme=tokyo-night&area=true&hide_border=true" width="100%" />
-</div>
-
-<br/>
 
 ### 🎯 `Focus Areas`
 - **Robotic Motion**: From 6-legged hexapods with Inverse Kinematics to high-precision gripper arms.
@@ -81,7 +76,7 @@ struct Builder {
 
 ```text
 >> ANALYZING RECENT COMMITS...
->> DETECTING HARDWARE INTEGRATIONS...
+  >> DETECTING HARDWARE INTEGRATIONS...
 >> SIGNAL STRENGTH: [ OPTIMAL ]
 ```
 
