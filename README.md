@@ -45,11 +45,13 @@
 <div align="center">
 
 ```
+
 drwxr-xr-x  HARDWARE & EMBEDDED SYSTEMS
 drwxr-xr-x  PROGRAMMING LANGUAGES
 drwxr-xr-x  AI / COMPUTER VISION / ROBOTICS
 drwxr-xr-x  WEB & BACKEND
 drwxr-xr-x  TOOLING & PLATFORMS
+
 ```
 
 </div>
