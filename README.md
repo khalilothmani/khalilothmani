@@ -25,7 +25,7 @@
 
 ```rust
 struct Builder {
-    identity: "MED KHALIL OTHMANI",
+    identity: "MOHAMED KHALIL OTHMANI",
     vibe:     "Robotics & IoT Enthusiast",
     mission:  "Merging complex logic with physical machines",
     status:   "Continuously iterating in the lab",
