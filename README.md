@@ -1,96 +1,236 @@
-<div align="center">
+# Spatial Intelligence WebService
 
-<!-- Futuristic Headers -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=34&duration=2000&pause=500&color=00FF9C&center=true&vCenter=true&width=800&lines=MED+KHALIL+OTHMANI;ROBOTICS+ENGR.+%2F+AI+BUILDER;THE+LAB+IS+OPEN+🤖;HACKING+THE+PHYSICAL+WORLD)](https://git.io/typing-svg)
-
-<br/>
-
-<!-- Wide, High-Impact LinkedIn Connection -->
-<a href="https://linkedin.com/in/khalil-othmani-379155316">
-  <img src="https://img.shields.io/badge/──────────%20CONNECT%20ON%20LINKEDIN%20%E2%9E%A4%20MED%20KHALIL%20OTHMANI%20──────────-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" width="100%"/>
-</a>
-
-<br/><br/>
-
-[![GitHub Activity](https://img.shields.io/badge/SYSTEM-ACTIVE-00FF9C?style=for-the-badge&logo=github&logoColor=black)](https://github.com/khalilothmani)
-[![Location](https://img.shields.io/badge/LOCATION-TUNISIA-FFD700?style=for-the-badge&logo=googlemaps&logoColor=black)](https://github.com/khalilothmani)
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Embedded-System-blue?style=for-the-badge&logo=espressif" />
+  <img src="https://img.shields.io/badge/Node.js-Express-green?style=for-the-badge&logo=node.js" />
+  <img src="https://img.shields.io/badge/MySQL-Cloud-orange?style=for-the-badge&logo=mysql" />
+  <img src="https://img.shields.io/badge/Network-Infrastructure-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Deploy-Remote-blueviolet?style=for-the-badge&logo=render" />
+</p>
 
 ---
 
-## `// SYSTEM_IDENTITY`
+## 🚀 Live Intelligence Preview
 
-```rust
-struct Builder {
-    identity: "MED KHALIL OTHMANI",
-    vibe:     "Robotics & IoT Enthusiast",
-    mission:  "Merging complex logic with physical machines",
-    status:   "Continuously iterating in the lab",
-    signal:   "Connected to 🛰️ GPS | 📶 GSM | 🤖 ROS | 👁️ AI"
+<p align="center">
+  <img src="./dashboard_screenshot.png" alt="Live System Dashboard" width="900"/>
+</p>
+
+> A comprehensive Real-Time Spatial Intelligence System — aggregating geodata from remote hardware nodes and processing it for live synchronized visualization.
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| 📡 Geodata Acquisition | Live spatial updates from remote nodes |
+| 🗺️ Interactive Dashboard | Synchronized map-based intelligence display |
+| 🛢️ Unified Cloud Data | Centralized cloud-based storage architecture |
+| 🔄 Dynamic Orchestration | Nodes register autonomously upon link establishment |
+| 🚗 System Telemetry | Comprehensive vector and energy monitoring |
+| 📶 Remote Connectivity | Wide-area network link layer communication |
+| 🔋 Energy Management | Motion-aware hardware power cycling |
+
+---
+
+## 🏗️ System Architecture
+
+```
+┌─────────────────────────────────┐
+│     Remote Hardware Node        │
+│    (Sensors + Connectivity)     │
+└────────────┬────────────────────┘
+             │ Unified Uplink
+             ▼
+┌─────────────────────────────────┐
+│     Centralized System API      │
+│       (Cloud Engine)            │
+└────────────┬────────────────────┘
+             │
+             ▼
+┌─────────────────────────────────┐
+│     Persistent Object Store     │
+└────────────┬────────────────────┘
+             │
+             ▼
+┌─────────────────────────────────┐
+│   Live Intelligence Dashboard   │
+└─────────────────────────────────┘
+```
+
+---
+
+## 📂 Project Structure
+
+```
+webServGPS-clean/
+├── circuit.png                   # Hardware circuit diagram
+├── dashboard_screenshot.png      # Dashboard preview
+├── prototype_photo.jpg           # Physical prototype photo
+├── database/                     # Aiven MySQL database schema
+│   ├── aiven-schema.sql          # Complete database setup
+│   └── README.md                 # Database setup guide
+├── esp32/                        # ESP32 + GPS + SIM800L firmware
+│   ├── esp32_gps_sim800l.ino     # Arduino sketch
+│   └── README.md                 # Hardware setup guide
+├── public/                       # Web dashboard
+│   └── index.html                # Live map interface
+├── .env.example                  # Environment variables template
+├── .gitignore                    # Git ignore rules
+├── index.js                      # Node.js Express server
+├── package.json                  # Dependencies
+└── README.md                     # This file
+```
+
+---
+
+## ⚙️ Installation
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Running
+
+**Development:**
+```bash
+npm run dev
+```
+
+**Production:**
+```bash
+npm start
+```
+
+---
+
+## 🔌 API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/gps/push` | Receive GPS data from ESP32 |
+| `GET` | `/api/gps/latest` | Get latest GPS location |
+| `GET` | `/api/devices` | List all registered devices |
+| `GET` | `/api/health` | Server health check |
+| `DELETE` | `/api/clear` | Clear all stored data |
+
+---
+
+## 🔧 ESP32 Integration
+
+Send a `POST` request to `/api/gps/push` with the following JSON payload:
+
+```json
+{
+  "device_imei": "ESP32_001",
+  "latitude": 36.8065,
+  "longitude": 10.1815,
+  "speed": 15.5,
+  "heading": 180.0,
+  "battery_voltage": 3.7
 }
 ```
 
-> **"I build what others simulate."**  
-> My work lives at the intersection of bare-metal performance and high-level intelligence. I don't just write code; I design systems that feel, see, and move.
+---
+
+## 🔩 Hardware Setup
+
+### 📦 Prototype
+
+<p align="center">
+  <img src="./prototype_photo.jpg" alt="GPS Tracker Prototype" width="650"/>
+</p>
+
+### 🧩 Circuit Diagram
+
+<p align="center">
+  <img src="./circuit.png" alt="ESP32 GPS Circuit Diagram" width="750"/>
+</p>
+
+### 🔋 ESP32 Power-Efficient GPS Tracker
+
+**Components Used:**
+
+| Component | Purpose |
+|---|---|
+| ESP32 DevKit | Main microcontroller (WiFi) |
+| NEO-6M GPS Module | Location tracking |
+| SIM800L GSM/GPRS | Cellular connectivity |
+| ADXL345 Accelerometer GY-291 | Motion detection |
+| AO3415A P-Channel MOSFET | Power control switch |
+| TP4056 Charging Module | Battery management |
+| 3.7V LiPo Battery (1000–2000mAh) | Power source |
+
+**⚡ Power Efficiency:**
+
+The system uses **motion-based power management** — the SIM800L cellular module is only powered when movement is detected by the accelerometer.
+
+> This extends battery life from ~2.5 hours to **12–15 hours** under typical usage.
+
+**Quick Start:**
+1. Wire all components according to the diagram above (`circuit.png`)
+2. Install Arduino libraries: `TinyGPS++`, `TinyGSM`, `ArduinoJson`, `Adafruit_ADXL345`
+3. Update your APN and server URL in the `.ino` file
+4. Upload to ESP32 and monitor Serial output
+
+See [`esp32/README.md`](esp32/README.md) for complete setup instructions including:
+- Full wiring diagram
+- MOSFET power control circuit
+- Required Arduino libraries
+- Configuration and tuning
+- Power consumption details
+- Troubleshooting guide
 
 ---
 
-## 🦾 `// BUILDING_IN_THE_LAB`
+## 🗄️ Database Setup
 
+Database tables are **automatically created on first run** — no manual setup required.
 
-### 🎯 `Focus Areas`
-- **Robotic Motion**: From 6-legged hexapods with Inverse Kinematics to high-precision gripper arms.
-- **Computer Vision**: OpenCV and MediaPipe pipelines for real-time human-robot interaction.
-- **IoT & Connectivity**: Global tracking systems using ESP32, GPS (NEO-6M), and Cellular (SIM800L).
-- **Embedded AI**: Running neural networks on edge devices to bridge the gap between sight and action.
-- **Power Optimization**: Hardware-level switching and sleep-cycling to maximize mobile uptime.
+For manual setup, see [`database/README.md`](database/README.md).
 
 ---
 
-## 🛠 `// TECH_ARSENAL`
+## 🚀 Deployment
 
-<div align="center">
+### Render + Aiven (Recommended)
 
-| **CORE** | **LIBRARIES & PLATFORMS** | **HARDWARE** |
-| :--- | :--- | :--- |
-| ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) | ![ROS](https://img.shields.io/badge/ROS-22314E?style=flat-square&logo=ros&logoColor=white) | ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white) |
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) | ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white) |
-| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) | ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white) |
-| ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | ![Raspi](https://img.shields.io/badge/RaspberryPi-C51A4A?style=flat-square&logo=raspberrypi&logoColor=white) |
+1. Push code to GitHub
+2. Create a **MySQL service** on [Aiven](https://aiven.io) and copy connection details
+3. Create a new **Web Service** on [Render](https://render.com)
+4. Connect your GitHub repository
+5. Configure environment variables in the Render dashboard:
 
-</div>
+   | Variable | Value |
+   |---|---|
+   | `DB_HOST` | From Aiven |
+   | `DB_USER` | From Aiven |
+   | `DB_PASS` | From Aiven |
+   | `DB_NAME` | From Aiven |
+   | `DB_PORT` | From Aiven |
+   | `PORT` | `10000` |
+
+6. Deploy 🎉
+
+> See [DEPLOYMENT.md](DEPLOYMENT.md) for a complete step-by-step guide with screenshots and troubleshooting.
 
 ---
 
-## 🐍 `// RECENT_ACTIVITY`
+## 💡 System Design Foundations
 
-<div align="center">
-  <!-- Dynamic Contribution Snake - Requires 'output' branch cleanup, but looks pro even as a concept -->
-  <img src="https://raw.githubusercontent.com/khalilothmani/khalilothmani/output/github-contribution-grid-snake.svg" alt="Snake" width="100%" />
-</div>
+- ⚙️ Complex system integration (Hardware + Data + Cloud)
+- 📡 Scalable wide-area connectivity
+- 🔄 Real-time data pipeline architecture
+- 🌐 Distributed API service orchestration
+- ☁️ Resilient cloud-native data management
+- 🔋 Autonomous energy optimization
+- 🗺️ Global-scale system intelligence
 
-<br/>
+---
 
-<div align="center">
-
-```text
->> ANALYZING RECENT COMMITS...
-  >> DETECTING HARDWARE INTEGRATIONS...
->> SIGNAL STRENGTH: [ OPTIMAL ]
-```
-
-<a href="https://linkedin.com/in/khalil-othmani-379155316">
-  <img src="https://img.shields.io/badge/───────────%20VIEW%20PROFESSIONAL%20DOSSIER%20(LINKEDIN)%20───────────-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" width="100%"/>
-</a>
-
-<br/><br/>
-
-<!-- Final Interactive-feel Badge -->
-[![Visitors](https://komarev.com/ghpvc/?username=khalilothmani&style=for-the-badge&color=00FF9C&label=LAB+ACCESSES)](https://github.com/khalilothmani)
-
-<br/>
-
-*"The future isn't coded, it's built."*
-
-</div>
+<p align="center">
+  Built with ❤️ during internship — from hardware to cloud, end-to-end.
+</p>
